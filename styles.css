@@ -1,0 +1,138 @@
+/* 
+   layouts
+   typoography
+   animations
+
+   jet color: #343434
+   draft-blue: #2F3061
+   Egyption Blue: #0E34A0
+   ultra Violet: #5F5980
+   platinum #DFDFDF
+ */
+
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ html{
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+ }
+
+ button{
+  border-radius: 0;
+  text-align: inherit;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  color: inherit;
+  font: inherit;
+
+ }
+
+ .container{
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+
+ header{
+   font-size: 10px;
+   background: #5f5980;
+   color: #efeef2;
+   padding: 3rem 1rem;
+   position: relative;
+}
+
+header .container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+h1{
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-links{
+   display: flex;
+}
+
+.btn{
+   text-decoration: none;
+   color: inherit;
+   font-size: 15px;
+   font-weight: 500;
+   letter-spacing: .5px;
+   margin-right: 10px;
+   padding: 1.5rem 1rem;
+   background-color: #2f3061;
+   border-radius: 8px;
+}
+
+.btn:hover{
+   background-color: #1c1d3a;
+   transition: all .5s;
+}
+
+.img-container{
+   position: relative;
+}
+
+.cta-img{
+   width: 100%;
+   display: block;
+}
+
+.form-container{
+   position: absolute;
+   margin: 0 auto;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: rgba(0,0,0,.5);
+}
+
+
+.form-title{
+   color:#efeef2; 
+   font-size: 46px;
+   font-weight: 700;
+   letter-spacing: 1px;
+}
+
+.form-input{
+   background:none;
+   outline: none;
+   border: none;
+   padding: 1rem .8rem;
+   caret: #fffff3;
+   color: #fffff3;
+   background-color: #6d6e90cb;
+   border-radius: 1rem;
+}
+
+.form-btn{
+   color: #efeef2;
+   margin-left: 10px;
+   border-radius: 10px;
+}
+
+/* css reset */
+/* css positioning - absolute, relative, sticky */
+/* grid vs flex */
+/* intrinsic sizing */
+/* inheritance */
+/* js - fundamentals - oop and mayve protoypal inheritance */
+/* DOM events */
