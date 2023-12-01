@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Search</title>
+</head>
+<body>
+    <input type="text" id="searchInput" placeholder="Search for games">
+    <button onclick="searchGames()">Search</button>
+
+    <ul id="searchResults"></ul>
+
+    <script>
+        function searchGames() {
+            // Get the search query from the input field
+            var query = document.getElementById('searchInput').value.toLowerCase();
+
+            // List of games
+            var games = [
+                { title: 'Game 1', description: 'Description for Game 1' },
+                { title: 'Game 2', description: 'Description for Game 2' },
+                { title: 'Game 3', description: 'Description for Game 3' },
+                { title: 'Game 4', description: 'Description for Game 4' },
+                { title: 'Game 5', description: 'Description for Game 5' },
+                { title: 'Game 6', description: 'Description for Game 6' },
+                // Add more games as needed
+            ];
+
+            // Filter games based on the search query
+            var results = games.filter(function (game) {
+                return game.title.toLowerCase().includes(query) || game.description.toLowerCase().includes(query);
+            });
+
+            // Display results
+            var resultsList = document.getElementById('searchResults');
+            resultsList.innerHTML = '';
+
+            results.forEach(function (result) {
+                var listItem = document.createElement('li');
+                listItem.textContent = result.title + ' - ' + result.description;
+                resultsList.appendChild(listItem);
+            });
+        }
+    </script>
+</body>
+</html>
